@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: IAM User creation
+Resources:
+  IAMUsercreation:
+    Type: 'AWS::IAM::User'
+    Properties: 
+      Groups: 
+        - Admins
+      UserName: lasehabibcloudformation
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample s3 bucket template
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties: 
+      BucketName: habibcloudformationbucket587664
